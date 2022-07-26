@@ -1,0 +1,28 @@
+//Подключение сторонних библиотек
+// @import 'libs/slick';
+
+@import 'base/mixins';
+@import 'base/_fonts';
+// @import 'base/icons-font';
+//Подключение обнуляющих, глобальных стилей, которые переиспользуются, миксинов, шрифтов
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/global';
+
+
+
+
+//Подключение сторонних библиотек
+// @import 'libs/slick';
+
+
+// Подключение переиспользуемых компонентов, таких как кнопки, меню, табы и пр.
+@import 'components/btn';
+
+// Подключение крупных блоков
+@import 'blocks/header';
+@import 'blocks/footer';
+
+
+//Мобильная адаптация
+// @import 'base/media';

@@ -1,0 +1,138 @@
+.header {
+  margin: 23px 0 33px;
+  &__top {
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $lightgreen-color;
+  }
+
+  &__logo {
+    width: 126px;
+    height: auto;
+  }
+
+  &__logo-img {
+  }
+
+  &__nav {
+  }
+
+  &__info {
+  }
+
+  &__tel {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__tel-icon {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__tel-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__schedule {
+  }
+
+  &__schedule-text {
+    font-size: 14px;
+    line-height: 16px;
+
+  }
+
+  &__btn {
+    margin-left: -15px;
+    padding: 12px 24px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $lightgreen-color;
+    border: 1px solid $lightgreen-color;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+      background-color: $lightgreen-color;
+      color: #fff;
+    }
+  }
+
+  &__bottom {
+    padding: 21px 0;
+    border-bottom: 1px solid $lightgreen-color;
+  }
+
+  &__bottom-list {
+
+  }
+}
+
+.nav {
+
+  &__list {
+    display: flex;
+    width: 594px;
+    justify-content: space-between;
+  }
+
+  &__ietem {
+  }
+
+  &__link {
+    transition: all .4        s;
+    &:hover {
+      color: #014daa;
+    }
+  }
+}
+.servises-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  &__title {
+    padding-right: 22px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../img/arrow-down.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 14px;
+      height: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+    }
+  }
+
+  &__sublist {
+  }
+
+  &__subitem {
+  }
+
+  &__sublink {
+  }
+
+  &__item-link {
+  }
+}
