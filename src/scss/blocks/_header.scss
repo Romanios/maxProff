@@ -52,14 +52,18 @@
     display: none;
   }
 
-  &__social-icon {
+  &__social-link {
     margin-right: 15px;
-    width: 26px;
-    height: 26px;
-    display: inline-block;
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &__social-icon {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+
   }
 
   &__btn {
@@ -78,6 +82,54 @@
       background-color: $lightgreen-color;
       color: #fff;
     }
+  }
+
+  &__open-btn {
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+  }
+
+  &__open-el {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: $blue-color;
+    position: absolute;
+    transition: .4s;
+    &::before {
+      content: "";
+      width: 35px;
+      height: 3px;
+      background-color: $blue-color;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      transition: .4s;
+    }
+    &::after {
+      content: "";
+      width: 35px;
+      height: 3px;
+      background-color: $blue-color;
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      transition: .4s;
+    }
+  }
+
+  &__open-img {
+    width: 100%;
+  }
+
+  &__btn-mobile {
+    display: none;
   }
 
   &__bottom {
@@ -113,7 +165,7 @@
     font-weight: 500;
     line-height: 19px;
     position: relative;
-    cursor: pointer;
+    // cursor: pointer;
     & br {
       display: none;
     }
@@ -144,7 +196,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    // display: none;
     transform: translate(-25%, -35%) scale(0);
     transition: .4s ease-in-out
   }
@@ -177,14 +228,12 @@
     top: -11px;
     left: -15px;
     border: 1px solid $lightgreen-color;
-    // display: none;
     z-index: -1;
     opacity: 0;
     transition: .3s;
   }
 
   // &__item-link {
-
   // }
 }
 
@@ -192,6 +241,7 @@
 
 .servises-list__item:hover .servises-list__title::after {
   transform: rotate(180deg);
+  top: calc(50% - 4px);
 }
 
 .servises-list__item:hover .servises-list__wrapper {
