@@ -13,14 +13,14 @@
     height: auto;
   }
 
-  &__logo-img {
-  }
+  // &__logo-img {
+  // }
 
-  &__nav {
-  }
+  // &__nav {
+  // }
 
-  &__info {
-  }
+  // &__info {
+  // }
 
   &__tel {
     margin-bottom: 5px;
@@ -40,13 +40,26 @@
     line-height: 21px;
   }
 
-  &__schedule {
-  }
+  // &__schedule {
+  // }
 
   &__schedule-text {
     font-size: 14px;
     line-height: 16px;
+  }
 
+  &__social {
+    display: none;
+  }
+
+  &__social-icon {
+    margin-right: 15px;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__btn {
@@ -72,9 +85,9 @@
     border-bottom: 1px solid $lightgreen-color;
   }
 
-  &__bottom-list {
+  // &__bottom-list {
 
-  }
+  // }
 }
 
 .nav {
@@ -85,11 +98,8 @@
     justify-content: space-between;
   }
 
-  &__ietem {
-  }
-
   &__link {
-    transition: all .4        s;
+    transition: all .4s;
     &:hover {
       color: #014daa;
     }
@@ -102,11 +112,16 @@
   &__item {
     font-weight: 500;
     line-height: 19px;
+    position: relative;
+    cursor: pointer;
+    & br {
+      display: none;
+    }
   }
 
   &__title {
     padding-right: 22px;
-    display: inline-block;
+    display: block;
     cursor: pointer;
     position: relative;
     &::after {
@@ -121,18 +136,68 @@
       top: 50%;
       transform: translateY(-50%);
       right: 0;
+      transition: .4s;
     }
   }
 
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // display: none;
+    transform: translate(-25%, -35%) scale(0);
+    transition: .4s ease-in-out
+  }
+
   &__sublist {
+    margin-top: 45px;
+    width: 250px;
+    padding: 25px 40px 37px;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.25);
+    // opacity: 0;
+    transition: .8s;
   }
 
   &__subitem {
+    line-height: 19px;
+    font-weight: 400;
+    position: relative;
   }
 
   &__sublink {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
   }
 
-  &__item-link {
+  &__sublink-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: -11px;
+    left: -15px;
+    border: 1px solid $lightgreen-color;
+    // display: none;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
   }
+
+  // &__item-link {
+
+  // }
+}
+
+//Выпадающее меню
+
+.servises-list__item:hover .servises-list__title::after {
+  transform: rotate(180deg);
+}
+
+.servises-list__item:hover .servises-list__wrapper {
+  transform: translateY(0%) scale(100%);
+}
+
+.servises-list__subitem:hover .servises-list__sublink-wrapper {
+  opacity: 1;
 }
