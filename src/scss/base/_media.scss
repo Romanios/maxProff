@@ -26,6 +26,9 @@
   .servises-list__item br {
     display: initial;
   }
+  .servises-list__sublist {
+    margin-top: 63px;
+  }
 }
 
 //small-tablet
@@ -127,7 +130,7 @@
     position: absolute;
     display: block;
     width: 80%;
-    bottom: -437px;
+    bottom: -657px;
     border-left: none;
     transform: translateX(-1000px);
     transition: .5s ease-in-out;
@@ -174,6 +177,43 @@
     width: 20px;
     height: 20px;
     fill: #fff;
+  }
+
+  .header__bottom-list.mobile {
+    display: block;
+  }
+
+  .servises-list__item:hover .servises-list__wrapper {
+    transform: translite(0);
+  }
+
+  .servises-list__item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid $lightgreen-color;
+    & br {
+      display: none;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  .servises-list__title::after {
+    display: none;
+  }
+
+  .servises-list__wrapper {
+    display: none;
+  }
+
+  .servises-list__item-link {
+    &:hover {
+      color: $blue-color;
+    }
   }
 
 }

@@ -237,6 +237,10 @@
   // }
 }
 
+.header__bottom-list.mobile {
+  display: none;
+}
+
 //Выпадающее меню
 
 .servises-list__item:hover .servises-list__title::after {

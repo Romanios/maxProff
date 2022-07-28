@@ -1,0 +1,74 @@
+.present {
+  padding-bottom: 24px;
+  width: 100%;
+  max-width: 1920px;
+  height: 720px;
+  background-image: url("../img/present-bg.jpg");
+  background-position: 550px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    width: 740px;
+  }
+
+  &__title {
+    max-width: 560px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  &__title-price {
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+    & span {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+      color: #fff;
+      background-color: $lightgreen-color;
+      border-radius: 6px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__explain {
+    max-width: 444px;
+  }
+
+  &__explain-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 75px;
+    row-gap: 26px;
+  }
+
+  &__explain-item {
+    width: 190px;
+  }
+
+  &__explain-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+
+  &__explain-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &__filter {
+    width: 460px;
+  }
+}
