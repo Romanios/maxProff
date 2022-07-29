@@ -18,10 +18,12 @@
 
 // Подключение переиспользуемых компонентов, таких как кнопки, меню, табы и пр.
 @import 'components/btn';
+@import 'components/range-slider';
 
 // Подключение крупных блоков
 @import 'blocks/header';
 @import 'blocks/present';
+@import 'blocks/filter';
 @import 'blocks/footer';
 
 

@@ -2,11 +2,14 @@
   padding-bottom: 24px;
   width: 100%;
   max-width: 1920px;
-  height: 720px;
   background-image: url("../img/present-bg.jpg");
   background-position: 550px 0;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: .4s;
+  &.mobile {
+    margin-top: 660px;
+  }
 
   &__inner {
     display: flex;

@@ -29,8 +29,85 @@
       </div>
 
       <div class="present__filter filter">
-        <h4 class="filter__title">Рассчитайте стоимость ремонта</h4>
-        <form action="#" class="filter__form"></form>
+        <form action="#" class="filter__form">
+          <h4 class="filter__title">Рассчитайте стоимость ремонта</h4>
+          <ul class="filter-list">
+            <li class="filter__item-type">
+              <p class="filter__item-title">Вид ремонта:</p>
+              <div class="filter__item-inner">
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="repair" checked><span>Косметический</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="repair"><span>Капитальный</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="repair"><span>Под ключ</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="repair"><span>Дизайнерский</span>
+                </label>
+              </div>
+            </li>
+
+            <li class="filter__item-type">
+              <p class="filter__item-title">Тип вашей недвижимости:</p>
+              <div class="filter__item-inner">
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="property"><span>Новостройка</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="property"><span>Вторичное жилье</span>
+                </label>
+              </div>
+            </li>
+            <li class="filter__item-type">
+              <p class="filter__item-title">Количество комнат</p>
+              <div class="filter__item-inner quantity">
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="quantity"><span>1</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="quantity"><span>2</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="quantity"><span>3</span>
+                </label>
+                <label class="filter__item-label">
+                  <input type="radio" class="filter__item-input" name="quantity"><span>4</span>
+                </label>
+              </div>
+            </li>
+            <li class="filter__item-type">
+              <p class="filter__item-title">Площадь, м2:</p>
+              <div class="filter__range-slider filter-range">
+                <div class="range">
+                  <div class="range__slider">
+                    <input type="range" step="1">
+                  </div>
+                  <div class="range__value">
+                    <output class="range__output"></output>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div class="filter__result">
+              <div class="filter__result-deadline">
+                <p class="filter__result-title">Срок ремонта:</p>
+                <p class="filter__result-text">до 34 дней</p>
+              </div>
+              <div class="filter__result-discount">
+                <p class="filter__result-title">Скидка составит:</p>
+                <p class="filter__result-text">23 765 руб</p>
+              </div>
+            </div>
+            <div class="filter__tel">
+              <p class="filter__tel-title">Введите номер телефона</p>
+              <input type="tel" class="filter__phone" placeholder="+7">
+              <button class="filter__btn" type="submit">Заказать</button>
+            </div>
+          </ul>
+        </form>
       </div>
     </div>
   </div>
