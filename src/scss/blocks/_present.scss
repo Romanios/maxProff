@@ -3,9 +3,9 @@
   width: 100%;
   max-width: 1920px;
   background-image: url("../img/present-bg.jpg");
-  background-position: 550px 0;
+  background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   transition: .4s;
   &.mobile {
     margin-top: 660px;
@@ -46,7 +46,7 @@
   }
 
   &__explain {
-    max-width: 444px;
+    width: 444px;
   }
 
   &__explain-list {

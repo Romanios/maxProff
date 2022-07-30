@@ -19,6 +19,42 @@
 
 //tablet
 @media (max-width: 1024px) {
+  .present__title {
+    font-size: 52px;
+    line-height: 60px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .present__left {
+    width: 100%;
+  }
+
+  .present__inner {
+    flex-direction: column;
+  }
+
+  .present__explain {
+    width: 100%;
+  }
+
+  .present__explain-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: normal;
+    justify-content: space-between;
+  }
+
+  .present__filter {
+    margin-top: 10px;
+    min-width: 100%;
+  }
+
+  .range {
+    justify-content: start;
+    & output {
+      padding-left: 20px;
+    }
+  }
 }
 
 //high-tablet
@@ -29,6 +65,31 @@
   .servises-list__sublist {
     margin-top: 63px;
   }
+
+  .present__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .present__title-price {
+    margin-bottom: 40px;
+    font-size: 26px;
+    text-align: center;
+    & span {
+      font-size: 42px;
+    }
+  }
+
+  .present__explain-list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .present__explain-item {
+    justify-self: center;
+  }
+
 }
 
 //small-tablet
@@ -214,6 +275,42 @@
     &:hover {
       color: $blue-color;
     }
+  }
+
+  .present__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .present__explain-list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .filter__item-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .filter__result {
+    flex-direction: column;
+  }
+
+  .filter__result-deadline {
+    margin-bottom: 30px;
+  }
+
+  .filter__item-inner.quantity {
+    grid-template-columns: 65px 65px 65px 65px;
+  }
+
+  .filter__btn {
+    display: block;
+    margin-top: 40px;
+    width: 200px;
   }
 
 }
