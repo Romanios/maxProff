@@ -46,8 +46,33 @@
     color: #595959;
   }
 
-  // &__item-input {
-  // }
+  &__item-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    outline: none;
+    transition: background 0.3s ease;
+    background: url(../img/radio.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    transform: translate(-4px, 4px);
+
+  }
+
+  &__item-input:checked {
+    background-image: url(../img/radio-1.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  &__item-input:hover {
+    filter: brightness(110%);
+  }
 
   // &__range-slider {
   // }
@@ -59,7 +84,6 @@
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
-
   }
 
   // &__result-deadline {

@@ -17,8 +17,8 @@ mobileBtn.addEventListener('click', function() {
   // mobiSwiperTop.classList.toggle('hidden');
 })
 
-// range slider
 
+// range slider
 class Slider {
   constructor (rangeElement, valueElement, options) {
     this.rangeElement = rangeElement
@@ -65,7 +65,7 @@ let valueElement = document.querySelector('.range .range__value output')
 let options = {
   min: 0,
   max: 200,
-  cur: 30
+  cur: 35
 }
 
 if (rangeElement) {
@@ -73,3 +73,9 @@ if (rangeElement) {
 
   slider.init()
 }
+
+// tel validation
+// inputMask
+let inputTel = document.querySelector('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputTel);
