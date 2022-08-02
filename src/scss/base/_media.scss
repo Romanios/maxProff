@@ -15,6 +15,22 @@
   .header__social {
     display: inline-block;
   }
+
+  .filter__btn {
+    display: block;
+    margin-top: 20px;
+    width: 202px;
+  }
+
+  .price__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .price__card {
+    margin: 0 auto;
+  }
 }
 
 //tablet
@@ -54,6 +70,11 @@
     & output {
       padding-left: 20px;
     }
+  }
+
+  .filter__btn {
+    display: inline;
+
   }
 }
 
@@ -309,8 +330,7 @@
 
   .filter__btn {
     display: block;
-    margin-top: 40px;
-    width: 200px;
+    width: 202px;
   }
 
 }

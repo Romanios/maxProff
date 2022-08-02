@@ -79,3 +79,25 @@ if (rangeElement) {
 let inputTel = document.querySelector('input[type="tel"]');
 let im = new Inputmask('+7 (999) 999-99-99');
 im.mask(inputTel);
+
+
+
+
+// btm more
+const moreBtn = document.querySelectorAll('.works__more');
+const worksChange = document.querySelectorAll('.works__item--hidden');
+
+moreBtn.forEach(item => {
+  item.addEventListener('click', () => {
+    this.nextElementSibling.classList.toggle("hidden");
+
+  })
+})
+
+
+
+
+
+// addEventListener('click', function() {
+//   worksChange.classList.toggle('hidden');
+// })

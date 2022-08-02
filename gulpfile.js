@@ -32,7 +32,7 @@ const html = function() {
       title: "HTML",
       message: error.message
     }))
-  }    
+  }
   ))
   .pipe(fileInclude())
   .pipe(size({ title: "HTML до сжатия" }))
@@ -41,9 +41,9 @@ const html = function() {
   }
   ))
   .pipe(size({ title: "HTML после сжатия" }))
-  .pipe(dest("./dist")) 
+  .pipe(dest("./dist"))
   .pipe(browserSync.stream());
-   
+
 }
 
 
@@ -55,7 +55,7 @@ function styles() {
       title: "SCSS",
       message: error.message
     }))
-  }    
+  }
   ))
     .pipe(sourcemaps.init())
     .pipe(size({ title: "SCSS до сжатия" }))
@@ -143,7 +143,7 @@ function script() {
     './src/js/main.js'
  ])
  .pipe(concat('main.min.js'))
- .pipe(uglify())
+//  .pipe(uglify())
  .pipe(dest('./dist/js/'))
  .pipe(browserSync.stream());
 }
