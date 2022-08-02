@@ -83,21 +83,33 @@ im.mask(inputTel);
 
 
 
-// btm more
+// btm more (показать еще)
 const moreBtn = document.querySelectorAll('.works__more');
 const worksChange = document.querySelectorAll('.works__item--hidden');
 
-moreBtn.forEach(item => {
-  item.addEventListener('click', () => {
+moreBtn.forEach(function(item) {
+  item.addEventListener('click', function() {
     this.nextElementSibling.classList.toggle("hidden");
-
   })
 })
 
 
+// инициализация .tabs как табов
+    new ItcTabs('.tabs');
 
+// Initialize Swiper
 
-
-// addEventListener('click', function() {
-//   worksChange.classList.toggle('hidden');
-// })
+    var swiper = new Swiper(".mySwiper1", {
+      cssMode: true,
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });

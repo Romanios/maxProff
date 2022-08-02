@@ -152,6 +152,15 @@
     padding-right: 15px;
   }
 
+  .price__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .price__card, .card {
+    max-width: 60%;
+  }
+
 }
 
 //mobil
@@ -328,9 +337,40 @@
     grid-template-columns: 65px 65px 65px 65px;
   }
 
+  .filter__tel-title {
+    text-align: center;
+  }
+
+  .filter__phone {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    // min-width: 300px;
+    margin-bottom: 20px;
+  }
+
   .filter__btn {
     display: block;
-    width: 202px;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .price__card, .card {
+    min-width: 280px;
+  }
+
+  .present {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  section {
+    padding: 30px 0 20px 0;
   }
 
 }
