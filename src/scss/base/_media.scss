@@ -31,6 +31,26 @@
   .price__card {
     margin: 0 auto;
   }
+
+  .example-slider__slide {
+    flex-direction: column;
+  }
+
+  .example-slider__slide-img {
+    margin: 0 auto;
+  }
+
+  .example-slider__slide-info {
+    margin-top: 20px;
+    max-width: 633px;
+    border-radius: 6px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .example-slider__inner-button-next {
+    display: none;
+  }
 }
 
 //tablet
@@ -161,6 +181,14 @@
     max-width: 60%;
   }
 
+  .tabs__nav {
+    flex-wrap: wrap;
+  }
+
+  .tabs__btn {
+    width: calc(50% - 4px);
+    margin-bottom: 10px;
+  }
 }
 
 //mobil
@@ -371,6 +399,23 @@
 
   section {
     padding: 30px 0 20px 0;
+  }
+
+  .example {
+    padding-bottom: 30px;
+  }
+
+  .example-slider__slide-info {
+    padding-left: 40px;
+  }
+
+  .slide-info__item-title {
+    width: 45%;
+  }
+
+  .tabs__btn {
+    width: calc(100% - 4px);
+    margin-bottom: 10px;
   }
 
 }

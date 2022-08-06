@@ -202,8 +202,8 @@
 
   &__sublist {
     margin-top: 45px;
-    width: 250px;
-    padding: 25px 40px 37px;
+    width: 220px;
+    padding: 20px;
     box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.25);
     // opacity: 0;
     transition: .8s;background-color: #fff;
@@ -216,24 +216,18 @@
   }
 
   &__sublink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: inline-block;
+    line-height: 20px;
     width: 100%;
-    height: 40px;
-  }
-
-  &__sublink-wrapper {
-    position: absolute;
-    width: 200px;
-    height: 40px;
-    top: -11px;
-    left: -15px;
-    border: 1px solid $lightgreen-color;
-    z-index: 1;
-    opacity: 0;
+    border: 1px solid transparent;
     transition: .3s;
   }
+  // &__sublink-wrapper {
 
-  // &__item-link {
   // }
 }
 
@@ -252,6 +246,6 @@
   transform: translateY(0%) scale(100%);
 }
 
-.servises-list__subitem:hover .servises-list__sublink-wrapper {
-  opacity: 1;
+.servises-list__subitem:hover .servises-list__sublink {
+  border-color: $lightgreen-color;
 }

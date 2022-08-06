@@ -100,16 +100,18 @@ moreBtn.forEach(function(item) {
 // Initialize Swiper
 
     var swiper = new Swiper(".mySwiper1", {
-      cssMode: true,
+      // cssMode: true,
       loop: true,
-      spaceBetween: 30,
+      grabCursor: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       pagination: {
         el: ".swiper-pagination",
+        clickable: true,
       },
-      mousewheel: true,
+      // mousewheel: true,
       keyboard: true,
+      spaceBetween: 10,
     });
