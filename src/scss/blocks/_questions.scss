@@ -1,0 +1,131 @@
+.questions {
+
+  // &__title {
+  // }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  &__accordeon {
+    margin-bottom: 65px;
+    max-width: 1100px;
+
+  }
+
+  &__accordeon-item {
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+  &__accordeon-header {
+    padding-left: 56px;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark-color;
+    background-color: #fff;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 26px;
+      width: 4px;
+      background-color: #ccc;
+      left: 17px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 4px;
+      background-color: #ccc;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      background-color: #f2f2f2;
+    }
+
+  }
+
+  &__accordeon-body {
+  }
+
+  &__accordeon-content {
+    background-color: #f2f2f2;
+    padding: 13px 56px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      // width: 100%;
+      top: 0;
+      left: 56px;
+      right: 56px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  &__consult {
+    padding: 32px 0;
+    background-color: $lightgreen-color;
+  }
+
+  &__consult-inner {
+    display: inline-flex;
+    align-items: center;
+    max-width: 860px;
+    color: #fff;
+  }
+
+  &__consult-title {
+    min-width: 288px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__consult-text {
+    font-weight: 500;
+  }
+
+  &__consult-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    // float: right;
+    border: 2px solid #fff;
+    &:hover {
+      background-color: #fff;
+      color: $lightgreen-color;
+    }
+  }
+}
+
+.container--consult {
+  position: relative;
+}
+
+
+.accordion__item_show .questions__accordeon-header {
+  background-color: #f2f2f2;
+}
+
+.accordion__item_show .questions__accordeon-header::before {
+  display: none;
+}
+
+.accordion__item_show .questions__accordeon-header::after {
+  background-color: $lightgreen-color;
+  // transform: translateY(-48%);
+}

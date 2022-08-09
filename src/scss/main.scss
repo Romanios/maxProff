@@ -15,6 +15,7 @@
 //Подключение сторонних библиотек
 // @import 'libs/slick';
 @import 'libs/tabs';
+@import 'libs/accordeon';
 
 
 // Подключение переиспользуемых компонентов, таких как кнопки, меню, табы и пр.
@@ -31,6 +32,8 @@
 @import 'blocks/wedo';
 @import 'blocks/benefits';
 @import 'blocks/control';
+@import 'blocks/providers';
+@import 'blocks/questions';
 @import 'blocks/footer';
 
 

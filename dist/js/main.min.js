@@ -115,3 +115,8 @@ moreBtn.forEach(function(item) {
       keyboard: true,
       spaceBetween: 10,
     });
+
+    // Initialize accordeon
+    new ItcAccordion(document.querySelector('.accordion'), {
+      alwaysOpen: false
+    });

@@ -56,7 +56,51 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .providers__descr {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .providers__inner {
+    flex-wrap: wrap;
+  }
+
+  .providers__discount {
+    margin-top: 40px;
+    padding: 19px 25px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .providers__discount-wrapper {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+
+  .providers__list {
+    width: 100%;
+    order: -1;
+  }
+
+  .providers__discount-btn {
+    display: inline;
+    margin-left: 40px;
+    transform: translateY(9px);
+  }
+
+  .questions__consult-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  .questions__consult-title {
+    margin-bottom: 10px;
+
+  }
 }
+
 
 //tablet
 @media (max-width: 1024px) {
@@ -262,7 +306,40 @@
   .control__list {
     grid-template-columns: 1fr 1fr;
   }
+
+  .providers__list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .providers__discount-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .providers__discount-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .questions__consult-inner {
+    display: flex;
+    width: 100%;
+  }
+
+  .questions__consult-text {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .questions__consult-btn {
+    position: sticky;
+    transform: translateY(0);
+    margin-top: 20px;
+    width: 100%;
+  }
 }
+
+
 
 //mobil
 @media (max-width: 576px) {
@@ -520,5 +597,45 @@
 
   .control__list {
     grid-template-columns: 1fr;
+  }
+
+  .providers {
+    padding-bottom: 40px;
+  }
+
+  .providers__discount {
+    padding: 30px 25px;
+  }
+
+  .providers__discount-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .providers__discount-info {
+    margin-bottom: 20px;
+  }
+
+  .providers__descr {
+    margin-bottom: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .questions__accordeon-header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .questions__accordeon-content {
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .questions__accordeon-content::before {
+    left: 10px;
+    right: 10px;
   }
 }
