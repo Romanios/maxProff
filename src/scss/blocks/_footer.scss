@@ -1,0 +1,213 @@
+
+
+
+.footer__payment-icon {
+  width: 26px;
+  height: 26px;
+  fill: #ccc;
+}
+
+.footer {
+  background-color: #2e3648;
+  &__top {
+    padding: 52px 0 34px;
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+  &__top-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #cbcbcb
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & img {
+      width: 126px;
+      height: auto;
+    }
+
+  }
+
+  // &__payment {
+  // }
+
+  &__payment-title {
+    margin-bottom: 14px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &__payment-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__payment-icon {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // &__services {
+  // }
+
+  &__services-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $lightgreen-color;
+  }
+
+  // &__services-list {
+  // }
+
+  &__services-item {
+    margin-bottom: 7px;
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__servises-iink {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  // &__about {
+  // }
+
+  // &__about-list {
+  // }
+
+  &__about-item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__about-link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  // &__contacts {
+  // }
+
+  // &__contacts-info {
+  // }
+
+  // &__tel {
+  // }
+
+  &__tel-icon {
+    width: 20px;
+    height: 20px;
+    fill: $lightgreen-color;
+  }
+
+  // &__tel-link {
+  // }
+
+  &__schedule {
+    margin-bottom: 6px;
+  }
+
+  &__contacts-btn {
+    margin-bottom: 14px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: $lightgreen-color;
+    cursor: pointer;
+  }
+
+  &__email {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__email-icon {
+    margin-right: 9px;
+    width: 23px;
+    height: 23px;
+    fill: $lightgreen-color;
+  }
+
+  &__email-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__address {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__address-icon {
+    margin-right: 9px;
+    width: 23px;
+    height: 23px;
+    fill: $lightgreen-color;
+  }
+
+  &__address-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-link {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__social-icon {
+    width: 23px;
+    height: 23px;
+    fill: #cbcbcb;
+  }
+
+  &__bottom {
+    padding: 30px 0;
+    color: #cbcbcb;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // &__bottom-copyright {
+
+  // }
+
+  // &__bottom-info {
+  // }
+
+  // &__bottom-map {
+  // }
+}
+
+

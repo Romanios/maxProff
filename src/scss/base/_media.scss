@@ -160,6 +160,8 @@
   }
 }
 
+
+
 //high-tablet
 @media (max-width: 992px) {
   .servises-list__item br {
@@ -244,7 +246,28 @@
     margin-right: 20px;
   }
 
+  .footer__top-inner {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 40px;
+  }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+  }
+
+  .footer__bottom-copyright {
+    margin-bottom: 20px;
+  }
+
+  .footer__bottom-info {
+    margin-bottom: 20px;
+  }
+
 }
+
+
+
 
 //small-tablet
 @media (max-width: 768px) {
@@ -637,5 +660,18 @@
   .questions__accordeon-content::before {
     left: 10px;
     right: 10px;
+  }
+
+  .footer__top-inner {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .footer__payment {
+    margin-top: 30px;
+  }
+
+  .footer__contacts-info {
+    display: block;
   }
 }
