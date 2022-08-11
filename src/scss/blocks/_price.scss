@@ -120,6 +120,8 @@
     cursor: pointer;
     margin-bottom: 10px;
   }
+
+
 }
 .works-list {
   margin-bottom: 18px;
@@ -162,4 +164,17 @@
   border-bottom: 1px solid #ccc;
   transform: translate(0%, -50%) scale(0);
   transition: .4s ease-in-out
+}
+
+// Переключение кнопки "Показать еще"
+.works__more-text--hide {
+  display: none;
+}
+
+.works__more.hide .works__more-text--hide {
+  display: block;
+}
+
+.works__more.hide .works__more-text {
+  display: none;
 }

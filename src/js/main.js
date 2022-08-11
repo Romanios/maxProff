@@ -5,7 +5,6 @@ const mobileBtn = document.querySelector('.header__open-btn');
 const mobileMenu = document.querySelector('.header__nav');
 const btnChange = document.querySelector('.header__open-el');
 const mobilePresent = document.querySelector('.present');
-// const mobiSwiperTop = document.querySelector('.swiperTop');
 
 mobileBtn.addEventListener('click', function() {
   mobileMenu.classList.toggle('active');
@@ -13,8 +12,7 @@ mobileBtn.addEventListener('click', function() {
   btnChange.classList.toggle('active');
   mobilePresent.classList.toggle('mobile');
 
-  // mobileWedo.classList.toggle('mobile');
-  // mobiSwiperTop.classList.toggle('hidden');
+
 })
 
 
@@ -76,7 +74,7 @@ if (rangeElement) {
 
 // tel validation
 // inputMask
-let inputTel = document.querySelector('input[type="tel"]');
+let inputTel = document.querySelectorAll('input[type="tel"]');
 let im = new Inputmask('+7 (999) 999-99-99');
 im.mask(inputTel);
 
@@ -89,6 +87,7 @@ const worksChange = document.querySelectorAll('.works__item--hidden');
 
 moreBtn.forEach(function(item) {
   item.addEventListener('click', function() {
+    this.classList.toggle('hide');
     this.nextElementSibling.classList.toggle("hidden");
   })
 })
@@ -120,3 +119,38 @@ moreBtn.forEach(function(item) {
     new ItcAccordion(document.querySelector('.accordion'), {
       alwaysOpen: false
     });
+
+
+  // popup
+const openPopup = document.querySelectorAll('.popup-btn');
+const popup = document.querySelector('#popup');
+const closePopup = document.getElementById('close-popup');
+
+openPopup.forEach(function(item) {
+  item.addEventListener('click', function(e) {
+    e.preventDefault();
+    popup.classList.add('open-window');
+  })
+})
+
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('open-window');
+})
+
+
+// scroll to element
+const anchors = document.querySelectorAll('a[href^="#"]')
+
+// Цикл по всем ссылкам
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault() // Предотвратить стандартное поведение ссылок
+    // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    // Плавная прокрутка до элемента с id = href у ссылки
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
