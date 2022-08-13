@@ -17,11 +17,13 @@
 @import 'libs/tabs';
 @import 'libs/accordeon';
 @import 'libs/popup';
+// @import 'libs/scroll-up';
 
 
 // Подключение переиспользуемых компонентов, таких как кнопки, меню, табы и пр.
 @import 'components/btn';
 @import 'components/range-slider';
+@import 'libs/scroll-up';
 
 // Подключение крупных блоков
 @import 'blocks/header';
