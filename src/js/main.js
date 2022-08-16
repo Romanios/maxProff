@@ -116,6 +116,59 @@ moreBtn.forEach(function(item) {
       spaceBetween: 10,
     });
 
+    var swiper = new Swiper(".mySwiper2", {
+      // cssMode: true,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // mousewheel: true,
+      keyboard: true,
+      spaceBetween: 10,
+    });
+
+    var swiper = new Swiper(".mySwiper3", {
+      // cssMode: true,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // mousewheel: true,
+      keyboard: true,
+      spaceBetween: 10,
+    });
+
+    var swiper = new Swiper(".mySwiper4", {
+      // cssMode: true,
+      loop: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // mousewheel: true,
+      keyboard: true,
+      spaceBetween: 10,
+    });
+
+
+
     // Initialize accordeon
     new ItcAccordion(document.querySelector('.accordion'), {
       alwaysOpen: false

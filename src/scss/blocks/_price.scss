@@ -149,6 +149,7 @@
 
 .works__item.hidden {
   transform: translateY(0%) scale(100%);
+  overflow: hidden;
 
 }
 
